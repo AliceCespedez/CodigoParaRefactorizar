@@ -6,7 +6,7 @@ public class CodigoParaRefactorizar {
         return precioBase + (IVA * precioBase);
     }
 
-public double calculoIva(double precioBase, double porcentajeDescuento) {
+public double calculoPrecioFinal(double precioBase, double porcentajeDescuento) {
     double precioConIva = calculoIva(precioBase);
     return precioConIva - (precioConIva * porcentajeDescuento / 100);
 }
